@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin : 0;
+}
+body {
+    width: 100%;
+}
+header {
+    background: #fbfbfb;
+}
+.copyright {
+    background:  #31291c;
+    display: flex;
+    align-content: center;
+}
+.footer-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
