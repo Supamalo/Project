@@ -21,58 +21,172 @@ a {
 }
 
 main,
+.my-jobs,
 .my-skills,
 .cover,
 .cover-plus,
 .header-page,
 .footer-page {
+    position      : relative;
     width         : 100%;
     display       : flex;
     flex-direction: column;
 }
 
 .footer-navigation,
-.cover div,
+.cover section,
 .pagetop,
-.my-jobs,
+.my-jobs-content,
 .my-skills-content {
-    width          : 1150px;
+    box-sizing     : border-box;
+    width          : 1200px;
     display        : flex;
     align-self     : center;
     justify-content: center;
 }
 
 .pagetop {
-    padding: 30px 0;
+    align-items    : center;
+    justify-content: space-between;
+    padding        : 30px 0;
 }
 
-.button-services {
+.pagetop nav ul,
+.pagetop-phone {
+    align-items: center;
+    display    : flex;
+}
+
+.pagetop-phone a {
+    margin     : 0 30px;
+    color      : black;
+    font-weight: bold;
+}
+
+.my_name {
+    font-size  : 80px;
+    font-weight: bold;
+}
+
+.my_prof {
+    font-size: 25px;
+    color    : #8993ad;
+}
+
+.cover-image {
+    position      : relative;
+    display       : flex;
+    flex-direction: row-reverse;
+}
+
+.cover-text {
+    top           : 150px;
+    flex-direction: column;
+    position      : absolute;
+}
+
+.pagetop nav a[href="#portfolio"] {
+    color          : #ff4e2e;
+    text-decoration: underline;
+}
+
+.pagetop nav a {
+    padding: 0 15px;
+    color  : black;
+}
+
+.button-call {
+    font-size      : 16px;
+    outline        : none;
     display        : flex;
     justify-content: center;
     align-self     : center;
-    padding        : 25px 80px;
+    padding        : 15px 45px;
+    color          : #ff4e2e;
+    border         : 1px solid #ff4e2e;
+    background     : inherit;
+}
+
+.button-more,
+.button-services,
+.button-project {
+    font-size      : 18px;
+    outline        : none;
+    display        : flex;
+    width          : 270px;
+    height         : 45px;
     margin-top     : 95px;
+    justify-content: center;
     color          : white;
     border         : none;
     background     : #ff4e2e;
+}
+
+.button-services,
+.button-project {
+    align-self: center;
+}
+
+.button-more {
+    align-self: left;
+}
+
+.my-jobs-prev {
+    left: -10px;
+}
+
+.my-jobs-next {
+    right: -10px;
+}
+
+.my-jobs-prev,
+.my-jobs-next {
+    font-size    : 25px;
+    border       : none;
+    border-radius: 20px;
+    width        : 40px;
+    height       : 40px;
+    top          : calc(50% - 50px);
+    position     : absolute;
+    background   : #fff;
+    color        : #8993ad;
+}
+
+.my-jobs-content {
+    padding        : 0 10px;
+    color          : #8993ad;
+    justify-content: space-between;
+    position       : relative;
+}
+
+.my-jobs-content figcaption {
+    margin-top: 35px;
+    text-align: center;
 }
 
 .my-skills-content div {
     justify-content: center;
     display        : flex;
     width          : 25%;
-    margin         : 0 30px;
+    margin         : 0 15px;
+}
+
+figcaption {
+    font-size: 20px;
 }
 
 .my-skills-content figure {
     text-align: center;
+    padding   : 0 15px;
 }
 
 .my-skills-content figcaption {
-    color: #8993ad;
+    margin-top: 25px;
+    color     : #8993ad;
 }
 
 .footer-navigation {
+    padding        : 0 25px;
     justify-content: space-between;
 }
 
@@ -102,12 +216,14 @@ main,
     background: linear-gradient(45deg, #ff8f5a, #ff2f96);
 }
 
-.my-skills {
+.my-skills,
+.my-jobs {
     padding   : 100px 0;
     background: #fff;
 }
 
-.my-skills-text {
+.my-skills-text,
+.my-jobs-text {
     display        : flex;
     justify-content: center;
     font-size      : 54px;
