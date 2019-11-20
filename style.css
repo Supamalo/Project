@@ -2,27 +2,130 @@
     padding: 0;
     margin : 0;
 }
+
 body {
-    width: 100%;
+    width           : 100%;
+    background-color: #fbfbfb;
+    display         : flex;
+    flex-direction  : column;
+    font-size       : 16px;
+    font-family     : 'Roboto', sans-serif;
 }
-header {
-    background: #fbfbfb;
+
+li {
+    list-style-type: none;
 }
-.copyright {
-    background:  #31291c;
-    display: flex;
-    align-content: center;
+
+a {
+    text-decoration: none;
 }
-.footer-page{
-    display: flex;
+
+main,
+.my-skills,
+.cover,
+.cover-plus,
+.header-page,
+.footer-page {
+    width         : 100%;
+    display       : flex;
     flex-direction: column;
 }
 
+.footer-navigation,
+.cover div,
+.pagetop,
+.my-jobs,
+.my-skills-content {
+    width          : 1150px;
+    display        : flex;
+    align-self     : center;
+    justify-content: center;
+}
+
+.pagetop {
+    padding: 30px 0;
+}
+
+.button-services {
+    display        : flex;
+    justify-content: center;
+    align-self     : center;
+    padding        : 25px 80px;
+    margin-top     : 95px;
+    color          : white;
+    border         : none;
+    background     : #ff4e2e;
+}
+
+.my-skills-content div {
+    justify-content: center;
+    display        : flex;
+    width          : 25%;
+    margin         : 0 30px;
+}
+
+.my-skills-content figure {
+    text-align: center;
+}
+
+.my-skills-content figcaption {
+    color: #8993ad;
+}
+
 .footer-navigation {
-    display: flex;
     justify-content: space-between;
 }
-.contacts {
-    display: flex;
+
+.cover-plus-box {
+    max-width     : 1000px;
+    display       : flex;
     flex-direction: column;
+    align-self    : center;
+}
+
+.cover-plus-text {
+    font-weight: bold;
+    font-size  : 45px;
+}
+
+.cover-plus-note {
+    max-width : 740px;
+    display   : flex;
+    flex-wrap : wrap;
+    margin-top: 40px;
+    font-size : 18px;
+}
+
+.cover-plus {
+    padding   : 90px 0;
+    color     : white;
+    background: linear-gradient(45deg, #ff8f5a, #ff2f96);
+}
+
+.my-skills {
+    padding   : 100px 0;
+    background: #fff;
+}
+
+.my-skills-text {
+    display        : flex;
+    justify-content: center;
+    font-size      : 54px;
+    font-weight    : bold;
+    margin-bottom  : 90px;
+}
+
+.copyright {
+    display        : flex;
+    justify-content: center;
+    background     : #31293c;
+    color          : white;
+    padding        : 30px 0;
+}
+
+.contacts,
+.cover {
+    display       : flex;
+    flex-direction: column;
+    align-self    : center;
 }
